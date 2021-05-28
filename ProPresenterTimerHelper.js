@@ -1,21 +1,24 @@
 
   const WebSocket = require('ws');
+  const fs = require('fs');
+  var ppconfig  = "";
+  var configFile = "";
 
-//Editable Variables:
 
-//Propresenter Control Port and Password
-ctrlPort = 20562;
-ctrlPassword = "control";
+//read config file
+try {
+  ppconfig = fs.readFileSync('ppconfig.txt', 'utf8');
+} catch (err) {
+  console.error(err);
+}
 
-//Service Times: change these for different service times
-//put them in 24 hour format
-service1 = "23:40:00";
-service2 = "23:45:00";
+var config = JSON.parse(ppconfig);
 
-//Timer Name/index
-//indicate which "number" timer you're changing. 
-//Find the number then subtract 1 (IE the first timer is 0, the 7th timer is 6)
-timerIndex = 0;
+var ctrlPassword = config.password;
+var ctrlPort = config.port;
+var service1 = config.service1
+var service2 = config.service2
+var timerIndex = config.timerIndex
 
   currTime = new Date().toLocaleTimeString('en-US', {hour12: false });
   currdatetime = ("01/01/2011 "+currTime);

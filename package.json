@@ -9,8 +9,6 @@
   "author": "anybody",
   "license": "MIT",
   "dependencies": {
-    "pkg": "^5.2.1",
-    "pkg-fetch": "^3.1.1",
     "ws": "^7.4.6"
   },
   "devDependencies": {},
