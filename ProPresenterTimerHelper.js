@@ -114,14 +114,14 @@ function onMessage(evt)
     case 'clockUpdate':
       //Start clock at index 0
       //console.log("Clock updated, restarting timer\n")
-      doSend('{"action":"clockReset","clockIndex":"0"}');
+      doSend('{"action":"clockReset","clockIndex":'+timerIndex+'}');
       actionflag = "clockStop"
       break;
 
       case 'clockStop':
         //Start clock at index 0
         //console.log("Clock updated, restarting timer\n")
-        doSend('{"action":"clockStart","clockIndex":"0"}');
+        doSend('{"action":"clockStart","clockIndex":'+timerIndex+'}');
         actionflag = ""
         break;
 
