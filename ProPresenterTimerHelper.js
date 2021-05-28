@@ -9,8 +9,8 @@ ctrlPassword = "control";
 
 //Service Times: change these for different service times
 //put them in 24 hour format
-service1 = "09:00:00";
-service2 = "10:45:00";
+service1 = "23:40:00";
+service2 = "23:45:00";
 
 //Timer Name/index
 //indicate which "number" timer you're changing. 

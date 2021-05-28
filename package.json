@@ -1,0 +1,28 @@
+{
+  "name": "propresentertimerhelper",
+  "version": "0.0.1",
+  "description": "Timer assistant to auto-reset a countdown timer in ProPresenter 7",
+  "main": "ProPresenterTimerHelper.js",
+  "bin": {
+    "propresentertimerhelper": "bin.js"
+  },
+  "author": "anybody",
+  "license": "MIT",
+  "dependencies": {
+    "pkg": "^5.2.1",
+    "pkg-fetch": "^3.1.1",
+    "ws": "^7.4.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/william-meaney1/PP7TimeProject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/william-meaney1/PP7TimeProject/issues"
+  },
+  "homepage": "https://github.com/william-meaney1/PP7TimeProject#readme"
+}
