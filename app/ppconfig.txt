@@ -1,1 +1,1 @@
-{"password":"control","port":20562, "service1":"16:00:00", "service2":"16:10:00", "timerIndex":0}
+{"password":"control","port":20562, "service1":"16:00:00", "service2":"16:10:00", "timerIndex":0, "clockName":"Pre-Service Countdown"}
