@@ -1,1 +1,0 @@
-{"password":"control","port":20562, "service1":"22:00:00", "service2":"22:45:00", "timerIndex":0}
