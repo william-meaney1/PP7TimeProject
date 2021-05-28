@@ -16,9 +16,10 @@ var config = JSON.parse(ppconfig);
 
 var ctrlPassword = config.password;
 var ctrlPort = config.port;
-var service1 = config.service1
-var service2 = config.service2
-var timerIndex = config.timerIndex
+var service1 = config.service1;
+var service2 = config.service2;
+var timerIndex = config.timerIndex;
+var clockName = config.clockName;
 
   currTime = new Date().toLocaleTimeString('en-US', {hour12: false });
   currdatetime = ("01/01/2011 "+currTime);
@@ -101,7 +102,7 @@ function onMessage(evt)
         doSend(JSON.stringify({
           "action":"clockUpdate",
           "clockIndex":timerIndex,
-          "clockName":"SvcCount",
+          "clockName":clockName,
           "clockType":1,
           "clockIsPM":pmCheck,
           "clockTime":"09:00:00",
